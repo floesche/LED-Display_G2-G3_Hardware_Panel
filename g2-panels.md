@@ -1,6 +1,7 @@
 ---
-title: Hardware
+title: Panel PCBs
 parent: Generation 2
+nav_order: 2
 ---
 
 

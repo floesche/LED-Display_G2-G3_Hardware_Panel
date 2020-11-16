@@ -1,0 +1,3 @@
+# Hardware for G2 and G3 Displays
+
+Hardware (Generation 2 and 3) of the Modular LED Displays can be found in this repository. Refer to the [documentation website](https://reiserlab.github.io/Modular-LED-Display) for more information.
