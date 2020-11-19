@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# flypanels-rescue_ATMEGA168-A
+# ATMEGA168-A
 #
-DEF flypanels-rescue_ATMEGA168-A IC 0 40 Y Y 1 F N
+DEF ATMEGA168-A IC 0 40 Y Y 1 F N
 F0 "IC" -700 1250 50 H V L BNN
-F1 "flypanels-rescue_ATMEGA168-A" 250 -1400 50 H V L BNN
+F1 "ATMEGA168-A" 250 -1400 50 H V L BNN
 F2 "TQFP32" -550 -1350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -49,11 +49,11 @@ X (PCINT21/OC0B/T1)PD5 9 1000 -1000 200 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_C
+# C
 #
-DEF flypanels-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 50 100 50 H V L CNN
-F1 "flypanels-rescue_C" 50 -100 50 H V L CNN
+F1 "C" 50 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -69,11 +69,11 @@ X ~ 2 0 -200 170 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_CER_RESO
+# CER_RESO
 #
-DEF flypanels-rescue_CER_RESO X 0 40 N N 1 F N
+DEF CER_RESO X 0 40 N N 1 F N
 F0 "X" 0 150 60 H V C CNN
-F1 "flypanels-rescue_CER_RESO" 0 250 60 H V C CNN
+F1 "CER_RESO" 0 250 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -87,11 +87,11 @@ X 3 3 300 0 200 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_CONN_8
+# CONN_8
 #
-DEF flypanels-rescue_CONN_8 P 0 40 Y N 1 F N
+DEF CONN_8 P 0 40 Y N 1 F N
 F0 "P" -50 0 60 V V C CNN
-F1 "flypanels-rescue_CONN_8" 50 0 60 V V C CNN
+F1 "CONN_8" 50 0 60 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -107,11 +107,11 @@ X P8 8 -350 -350 250 R 50 50 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_GND
+# GND
 #
-DEF flypanels-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "flypanels-rescue_GND" 0 -70 30 H I C CNN
+F1 "GND" 0 -70 30 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -120,11 +120,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_LED_8X8
+# LED_8X8
 #
-DEF flypanels-rescue_LED_8X8 MATRIX 0 40 Y Y 1 F N
+DEF LED_8X8 MATRIX 0 40 Y Y 1 F N
 F0 "MATRIX" 0 500 60 H V C CNN
-F1 "flypanels-rescue_LED_8X8" 0 650 60 H V C CNN
+F1 "LED_8X8" 0 650 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -150,11 +150,11 @@ X A8 9 1050 -350 300 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_R
+# R
 #
-DEF flypanels-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "flypanels-rescue_R" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -170,11 +170,11 @@ X ~ 2 0 -250 100 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_ULN2804A
+# ULN2804A
 #
-DEF flypanels-rescue_ULN2804A U 0 40 Y Y 1 F N
+DEF ULN2804A U 0 40 Y Y 1 F N
 F0 "U" 0 500 60 H V C CNN
-F1 "flypanels-rescue_ULN2804A" 0 650 60 H V C CNN
+F1 "ULN2804A" 0 650 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -202,11 +202,11 @@ X GND 9 0 -1050 300 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# flypanels-rescue_VCC
+# VCC
 #
-DEF flypanels-rescue_VCC #PWR 0 0 Y Y 1 F P
+DEF VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 100 30 H I C CNN
-F1 "flypanels-rescue_VCC" 0 100 30 H V C CNN
+F1 "VCC" 0 100 30 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
