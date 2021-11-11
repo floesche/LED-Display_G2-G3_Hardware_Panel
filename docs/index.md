@@ -11,7 +11,7 @@ nav_order: 2
 
 The display devices in [Generation 2 (G2)](({{site.baseurl}}/Generation%202/Arenas/docs/g2_system.html)) and [Generation 3 (G3)]({{site.baseurl}}/Generation%203) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller.
 
-The LED matrix component [BM-10288MD]({{site.baseurl}}/Generation%203/Hardware/docs/assets/green-panels_BM-10288MD.pdf) that was used in the Generation 2 displays measures 32×32mm² and consists of 8×8 = 64 LEDs. The panel board has the same dimension and is attached to the back of the matrix component. It contains an ATmega168-A and a ULN2804A to drive the LED matrix.
+The LED matrix component [BM-10288MD](assets/datasheets/BM-10288MD.pdf) (or the alternative [BL-M12A811](assets/datasheets/BL-M12A881.pdf)) that was used in the Generation 2 displays measures 32×32mm² and consists of 8×8 = 64 LEDs. The panel board has the same dimension and is attached to the back of the matrix component. It contains an ATmega168-A and a ULN2804A to drive the LED matrix.
 
 __Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/docs/G4-index.html) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
 
