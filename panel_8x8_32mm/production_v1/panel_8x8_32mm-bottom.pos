@@ -1,0 +1,7 @@
+### Module positions - created on Wed Nov 10 14:43:14 2021 ###
+### Printed by Pcbnew version kicad 5.1.10
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val       Package                PosX       PosY       Rot  Side
+U1        ULN2804A  XZL_SOP18          116.7994   -84.6988  180.0000  bottom
+## End

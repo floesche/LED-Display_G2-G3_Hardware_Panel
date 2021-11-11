@@ -29,7 +29,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=80
-LastNetListRead=flypanels.net
+LastNetListRead=panel_8x8_32mm.net
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets

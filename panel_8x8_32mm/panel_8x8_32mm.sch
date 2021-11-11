@@ -224,7 +224,7 @@ Wire Wire Line
 Wire Wire Line
 	2825 4600 2700 4600
 $Comp
-L flypanels-rescue:VCC #PWR01
+L panel_8x8_32mm:VCC #PWR01
 U 1 1 504FBC29
 P 1900 3225
 F 0 "#PWR01" H 1900 3325 30  0001 C CNN
@@ -235,7 +235,7 @@ F 3 "" H 1900 3225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR02
+L panel_8x8_32mm:GND #PWR02
 U 1 1 504FBC28
 P 1900 3875
 F 0 "#PWR02" H 1900 3875 30  0001 C CNN
@@ -246,7 +246,7 @@ F 3 "" H 1900 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:C C2
+L panel_8x8_32mm:C C2
 U 1 1 504FBC27
 P 1900 3550
 F 0 "C2" H 1950 3650 50  0000 L CNN
@@ -257,7 +257,7 @@ F 3 "" H 1900 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR03
+L panel_8x8_32mm:GND #PWR03
 U 1 1 504E3CA9
 P 5400 2200
 F 0 "#PWR03" H 5400 2200 30  0001 C CNN
@@ -268,7 +268,7 @@ F 3 "" H 5400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:CER_RESO X1
+L panel_8x8_32mm:CER_RESO X1
 U 1 1 504E3C39
 P 5400 1725
 F 0 "X1" H 5400 1875 60  0000 C CNN
@@ -279,7 +279,7 @@ F 3 "" H 5400 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:C C1
+L panel_8x8_32mm:C C1
 U 1 1 504E3A3D
 P 1350 3550
 F 0 "C1" H 1400 3650 50  0000 L CNN
@@ -290,7 +290,7 @@ F 3 "" H 1350 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR04
+L panel_8x8_32mm:GND #PWR04
 U 1 1 504E3A13
 P 1350 3875
 F 0 "#PWR04" H 1350 3875 30  0001 C CNN
@@ -301,7 +301,7 @@ F 3 "" H 1350 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:VCC #PWR05
+L panel_8x8_32mm:VCC #PWR05
 U 1 1 504E39FE
 P 1350 3225
 F 0 "#PWR05" H 1350 3325 30  0001 C CNN
@@ -312,7 +312,7 @@ F 3 "" H 1350 3225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:R R8
+L panel_8x8_32mm:R R8
 U 1 1 504A6150
 P 7375 2400
 F 0 "R8" V 7350 2600 50  0000 C CNN
@@ -326,7 +326,7 @@ NoConn ~ 2825 3750
 NoConn ~ 2825 3850
 NoConn ~ 4725 3450
 $Comp
-L flypanels-rescue:R R9
+L panel_8x8_32mm:R R9
 U 1 1 504A9F2F
 P 5325 4800
 F 0 "R9" V 5300 5000 50  0000 C CNN
@@ -337,7 +337,7 @@ F 3 "" H 5325 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:CONN_8 P2
+L panel_8x8_32mm:CONN_8 P2
 U 1 1 504A9C94
 P 6675 5450
 F 0 "P2" V 6625 5450 60  0000 C CNN
@@ -348,7 +348,7 @@ F 3 "" H 6675 5450 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L flypanels-rescue:VCC #PWR06
+L panel_8x8_32mm:VCC #PWR06
 U 1 1 504A9C93
 P 6925 5000
 F 0 "#PWR06" H 6925 5100 30  0001 C CNN
@@ -359,7 +359,7 @@ F 3 "" H 6925 5000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR07
+L panel_8x8_32mm:GND #PWR07
 U 1 1 504A9C92
 P 7200 5250
 F 0 "#PWR07" H 7200 5250 30  0001 C CNN
@@ -370,7 +370,7 @@ F 3 "" H 7200 5250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR08
+L panel_8x8_32mm:GND #PWR08
 U 1 1 504A9C91
 P 7200 5250
 F 0 "#PWR08" H 7200 5250 30  0001 C CNN
@@ -385,7 +385,7 @@ BOTTOM
 Text Notes 5475 5650 0    60   ~ 0
 TOP
 $Comp
-L flypanels-rescue:GND #PWR09
+L panel_8x8_32mm:GND #PWR09
 U 1 1 504A9A89
 P 5025 5225
 F 0 "#PWR09" H 5025 5225 30  0001 C CNN
@@ -396,7 +396,7 @@ F 3 "" H 5025 5225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR010
+L panel_8x8_32mm:GND #PWR010
 U 1 1 504A9A88
 P 5025 5225
 F 0 "#PWR010" H 5025 5225 30  0001 C CNN
@@ -407,7 +407,7 @@ F 3 "" H 5025 5225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR011
+L panel_8x8_32mm:GND #PWR011
 U 1 1 504A9A80
 P 8925 5550
 F 0 "#PWR011" H 8925 5550 30  0001 C CNN
@@ -418,7 +418,7 @@ F 3 "" H 8925 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:VCC #PWR012
+L panel_8x8_32mm:VCC #PWR012
 U 1 1 504A9A3C
 P 5300 5025
 F 0 "#PWR012" H 5300 5125 30  0001 C CNN
@@ -432,7 +432,7 @@ NoConn ~ 5400 5100
 NoConn ~ 5500 5100
 NoConn ~ 5600 5100
 $Comp
-L flypanels-rescue:CONN_8 P1
+L panel_8x8_32mm:CONN_8 P1
 U 1 1 504A999C
 P 5550 5450
 F 0 "P1" V 5500 5450 60  0000 C CNN
@@ -443,7 +443,7 @@ F 3 "" H 5550 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R2
+L panel_8x8_32mm:R R2
 U 1 1 504A8490
 P 7375 3250
 F 0 "R2" V 7350 3450 50  0000 C CNN
@@ -454,7 +454,7 @@ F 3 "" H 7375 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R1
+L panel_8x8_32mm:R R1
 U 1 1 504A848F
 P 7375 3350
 F 0 "R1" V 7350 3550 50  0000 C CNN
@@ -465,7 +465,7 @@ F 3 "" H 7375 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR013
+L panel_8x8_32mm:GND #PWR013
 U 1 1 504A842E
 P 8925 5550
 F 0 "#PWR013" H 8925 5550 30  0001 C CNN
@@ -476,7 +476,7 @@ F 3 "" H 8925 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:VCC #PWR014
+L panel_8x8_32mm:VCC #PWR014
 U 1 1 504A840B
 P 9825 4975
 F 0 "#PWR014" H 9825 5075 30  0001 C CNN
@@ -487,7 +487,7 @@ F 3 "" H 9825 4975 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L flypanels-rescue:ULN2804A U1
+L panel_8x8_32mm:ULN2804A U1
 U 1 1 504A83E6
 P 8925 4350
 F 0 "U1" H 8925 4850 60  0000 C CNN
@@ -498,7 +498,7 @@ F 3 "" H 8925 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:R R3
+L panel_8x8_32mm:R R3
 U 1 1 504A61B8
 P 7375 2900
 F 0 "R3" V 7350 3100 50  0000 C CNN
@@ -509,7 +509,7 @@ F 3 "" H 7375 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R4
+L panel_8x8_32mm:R R4
 U 1 1 504A61B7
 P 7375 2800
 F 0 "R4" V 7350 3000 50  0000 C CNN
@@ -520,7 +520,7 @@ F 3 "" H 7375 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R6
+L panel_8x8_32mm:R R6
 U 1 1 504A61B4
 P 7375 2600
 F 0 "R6" V 7350 2800 50  0000 C CNN
@@ -531,7 +531,7 @@ F 3 "" H 7375 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R5
+L panel_8x8_32mm:R R5
 U 1 1 504A61B3
 P 7375 2700
 F 0 "R5" V 7350 2900 50  0000 C CNN
@@ -542,7 +542,7 @@ F 3 "" H 7375 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:R R7
+L panel_8x8_32mm:R R7
 U 1 1 504A6174
 P 7375 2500
 F 0 "R7" V 7350 2700 50  0000 C CNN
@@ -553,7 +553,7 @@ F 3 "" H 7375 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L flypanels-rescue:LED_8X8 MATRIX1
+L panel_8x8_32mm:LED_8X8 MATRIX1
 U 1 1 504A5C6B
 P 8875 2650
 F 0 "MATRIX1" H 8875 3150 60  0000 C CNN
@@ -564,7 +564,7 @@ F 3 "" H 8875 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:GND #PWR015
+L panel_8x8_32mm:GND #PWR015
 U 1 1 4FC6C3B6
 P 2700 5050
 F 0 "#PWR015" H 2700 5050 30  0001 C CNN
@@ -575,7 +575,7 @@ F 3 "" H 2700 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:VCC #PWR016
+L panel_8x8_32mm:VCC #PWR016
 U 1 1 4FC6C1FE
 P 2700 1950
 F 0 "#PWR016" H 2700 2050 30  0001 C CNN
@@ -586,7 +586,7 @@ F 3 "" H 2700 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L flypanels-rescue:ATMEGA168-A IC1
+L panel_8x8_32mm:ATMEGA168-A IC1
 U 1 1 4FC6BF13
 P 3725 3500
 F 0 "IC1" H 3025 4750 50  0000 L BNN

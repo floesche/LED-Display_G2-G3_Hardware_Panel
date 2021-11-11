@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name panel_8x8_32mm)(type Legacy)(uri ${KIPRJMOD}/panel_8x8_32mm.lib)(options "")(descr ""))
+)

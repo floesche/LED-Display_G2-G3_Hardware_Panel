@@ -1,0 +1,17 @@
+### Module positions - created on Wed Nov 10 14:43:14 2021 ###
+### Printed by Pcbnew version kicad 5.1.10
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val       Package                PosX       PosY       Rot  Side
+C1        0.1uF     SM0603             128.0008   -98.8009    0.0000  top
+C2        0.1uF     SM0603             124.8994   -90.7009  270.0000  top
+R1        82        SM0603             104.0003   -72.4002    0.0000  top
+R2        82        SM0603             130.5001   -79.7992   90.0000  top
+R3        82        SM0603             130.5992   -87.0001  270.0000  top
+R4        82        SM0603             108.0999   -85.9993    0.0000  top
+R5        82        SM0603             125.0010   -81.0997  270.0000  top
+R6        82        SM0603             108.0999   -88.8009    0.0000  top
+R7        82        SM0603             102.1004   -98.3005    0.0000  top
+R8        82        SM0603             108.0008   -91.6991    0.0000  top
+R9        10K       SM0603             128.0008   -72.4002    0.0000  top
+## End
