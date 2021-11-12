@@ -1,3 +1,9 @@
-# Hardware for G2 and G3 Displays
+# Modular display system, Generation 2, Panels
 
-Hardware (Generation 2 and 3) of the Modular LED Displays can be found in this repository. Refer to the [documentation website](https://reiserlab.github.io/Modular-LED-Display) for more information.
+Panels for Generation 2 and Generation 3 modular LED displays. Find more information on the [Modular LED Display website](https://reiserlab.github.io/Modular-LED-Display/) under the [Generation 2](https://reiserlab.github.io/Modular-LED-Display/Generation%202) menu.
+
+The whole system of 2nd generation modular displays was described in:
+
+Reiser, Michael B.; Dickinson, Michael H. (2008): "A modular display system for insect behavioral neuroscience". In: *Journal of Neuroscience Methods*. 167 (2), pp.&nbsp;127–139, DOI: [10.1016/j.jneumeth.2007.07.019](https://doi.org/10.1016/j.jneumeth.2007.07.019).
+
+Before June 2020, this repository was hosted on <https://bitbucket.org/mreiser>.
