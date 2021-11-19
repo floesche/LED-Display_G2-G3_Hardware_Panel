@@ -9,9 +9,9 @@ nav_order: 3
 ![Panel PCB front view](assets/panel_8x8_32mm_front.png){:.ifr .pop}
 ![Panel PCB back view](assets/panel_8x8_32mm_back.png){:.ifr .pop .clear}
 
-The display devices in [Generation 2 (G2)](({{site.baseurl}}/Generation%202/Arenas/docs/g2_system.html)) and [Generation 3 (G3)]({{site.baseurl}}/Generation%203) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller. Each panel is individually addressed and communicates with the controller over the TWI bus. Each panel runs a small program which receives updated pattern information and refreshes the display.
+The display devices in [Generation 2 (G2)]({{site.baseurl}}/Generation%202/Arenas/docs/g2_system.html) and [Generation 3 (G3)]({{site.baseurl}}/Generation%203) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller. Each panel is individually addressed and communicates with the controller over the TWI bus. Each panel runs a small program which receives updated pattern information and refreshes the display.
 
-__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/docs/G4-index.html) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
+__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/docs/g4_system.html) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
 
 ## Components
 
@@ -21,7 +21,7 @@ The LED matrix component [BM-10288MD](assets/datasheets/BM-10288MD.pdf) (or the 
 
 ## Design and Production
 
-The KiCAD design files are in the `panel_8x8_32mm` directory. Gerber files and a Bill of Materials (BOM) are in a subdirectory `production_v1`. Data sheets for the components used in the built are archived in the `datasheets` directory. For historic reason and although completely outdated we also share the initial [cost estimation](assets/panel_8x8_32mm_costs.xls) done in 2011.
+The KiCad design files are in the `panel_8x8_32mm` directory. Gerber files and a Bill of Materials (BOM) are in a subdirectory `production_v1`. Data sheets for the components used in the built are archived in the `datasheets` directory. For historic reason and although completely outdated we also share the initial [cost estimation](assets/panel_8x8_32mm_costs.xls) done in 2011.
 
 The most recent production of panels we are aware of was in 2020 (please [let us know]({{site.baseurl}}/Contact) if you built another batch). The [Frye lab](https://sites.lifesci.ucla.edu/ibp-frye/research/) used our files version 1.3 (generated in 2012) to order at [Bittele Electronics Inc](https://7pcb.com) in Canada. If you want to replicate the exact same order, feel free to include the order reference number Q12295E in your conversation with Bittele. The panels look a little different from the images above and used the name __flypanel__ internally. The exact same files used in this order are archived at `panel_8x8_32mm/production_v1/panel_8x8_32mm_v1p3.zip`.
 
@@ -29,7 +29,8 @@ The `panel_8x8_32mm/production_v1/panel_8x8_32mm_v1p4.zip` contains a more curre
 
 ## Software
 
-> __Note__: The following sections are out of date. Unless you need to repair a Generation 2 system, follow the instruction in the [Generation 3]({{site.baseurl}}/Generation%203/) menu.
+__Note__: The following sections are out of date. Unless you need to repair a Generation 2 system, follow the instruction in the [Generation 3]({{site.baseurl}}/Generation%203/) menu.
+{:.warning}
 
 The software running on each Panel's ATmega8 microcontroller is written in C code, and compiled using the GCC tools for the AVR (WinAVR distribution). Packets are sent to each panel over the TWI bus, the TWI unit on the ATmega8 will only accept a packet if it is addressed either with a 0 (general call) or the address of the panel. In this way specific panels can be targeted. The EEPROM of the ATmega8 is loaded with some patterns, so that the SRAM on the chip is available for pattern buffers. The EEPROM contains the character library for 0…9 and the patterns for the error codes. The EEPROM also has one byte designated for the panel ID, this is set to 0 during the programming.
 
@@ -69,6 +70,6 @@ For programming many panels this process can be automated by using the *Auto*{:.
 | 1        | 16MHz ceramic resonator w. capacitors   | Digi-Key, X908-ND | $0.30 |
 | 1        | 8 CH line driver ULN2804A 8-SOL package | Digi-Key, ULN2804AFW-ND | $0.35 |
 | 1        | [Atmega8](http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf) microcontroller, 32 TQFP package| Digi-Key, ATMEGA8-16AI-ND | $2.25 |
-| 1        | Panel PCB                               | ordered from Advanced Circuits | | 
+| 1        | Panel PCB                               | ordered from Advanced Circuits | |
 
 __Optional__: 2 8-Pin straight female headers, Jameco p/n 70754 ($0.23), can be used so that the LED displays are socketed, this is convenient, but also will not guarantee ideal contact between circuit and display.
