@@ -1,4 +1,4 @@
-# Modular display system, Generation 2, Panels
+# Modular display system, Generation 2 + 3, Panels
 
 Panels for Generation 2 and Generation 3 modular LED displays. Find more information on the [Modular LED Display website](https://reiserlab.github.io/Modular-LED-Display/) under the [Generation 2](https://reiserlab.github.io/Modular-LED-Display/Generation%202) menu.
 
