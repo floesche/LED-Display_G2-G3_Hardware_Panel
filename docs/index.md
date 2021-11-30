@@ -56,8 +56,7 @@ Because each panel has a microprocessor on-board, each panel needs to be program
 
 For programming many panels this process can be automated by using the *Auto*{:.gui-btn} tab and selecting *program FLASH*{:.gui-txt}, *program EEPROM*{:.gui-txt}, and *program fuses*{:.gui-txt}. Once a panel is programmed it needs to be addressed, this is done using the PControl software.
 
-# Parts list
-{:#parts-list}
+# Parts list {#parts-list}
 
 | quantity | part description               | source & p/n | price |
 |---------:|:-------------------------------|:-------------|------:|
