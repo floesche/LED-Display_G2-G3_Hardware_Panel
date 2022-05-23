@@ -9,9 +9,9 @@ nav_order: 3
 ![Panel PCB front view](assets/panel_8x8_32mm_front.png){:.ifr .pop}
 ![Panel PCB back view](assets/panel_8x8_32mm_back.png){:.ifr .pop .clear}
 
-The display devices in [Generation 2 (G2)]({{site.baseurl}}/Generation%202/Arenas/docs/g2_system.html) and [Generation 3 (G3)]({{site.baseurl}}/Generation%203) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller. Each panel is individually addressed and communicates with the controller over the TWI bus. Each panel runs a small program which receives updated pattern information and refreshes the display.
+The display devices in [Generation 2 (G2)]({{site.baseurl}}/Generation%202/Arenas/docs/g2_system.html) and [Generation 3 (G3)]({{site.baseurl}}/G3/) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller. Each panel is individually addressed and communicates with the controller over the TWI bus. Each panel runs a small program which receives updated pattern information and refreshes the display.
 
-__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/docs/g4_system.html) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
+__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/G4/) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
 
 ## Components
 
@@ -29,7 +29,7 @@ The `panel_8x8_32mm/production_v1/panel_8x8_32mm_v1p4.zip` contains a more curre
 
 ## Software
 
-__Note__: The following sections are out of date. Unless you need to repair a Generation 2 system, follow the instruction in the [Generation 3]({{site.baseurl}}/Generation%203/) menu.
+__Note__: The following sections are out of date. Unless you need to repair a Generation 2 system, follow the instruction in the [Generation 3]({{site.baseurl}}/G3/) menu.
 {:.warning}
 
 The software running on each Panel's ATmega8 microcontroller is written in C code, and compiled using the GCC tools for the AVR (WinAVR distribution). Packets are sent to each panel over the TWI bus, the TWI unit on the ATmega8 will only accept a packet if it is addressed either with a 0 (general call) or the address of the panel. In this way specific panels can be targeted. The EEPROM of the ATmega8 is loaded with some patterns, so that the SRAM on the chip is available for pattern buffers. The EEPROM contains the character library for 0…9 and the patterns for the error codes. The EEPROM also has one byte designated for the panel ID, this is set to 0 during the programming.
