@@ -11,7 +11,7 @@ nav_order: 3
 
 The display devices in [Generation 2 (G2)]({{site.baseurl}}/G2/) and [Generation 3 (G3)]({{site.baseurl}}/G3/) of the Modular LED Display consists of a standard 8×8 LED matrix component mounted to a custom PCB. This custom PCB, in the original [paper](https://doi.org/10.1016/j.jneumeth.2007.07.019) and our [documentation]({{site.baseurl}}) referred to as the __panel__, is responsible for the communication with the controller. Each panel is individually addressed and communicates with the controller over the TWI bus. Each panel runs a small program which receives updated pattern information and refreshes the display.
 
-__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/G4/) of the Modular LED Display, we built our own LED PCBs then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
+__Note__: To clarify the terminology: in [Generation 4]({{site.baseurl}}/G4/) of the Modular LED Display, we built our own LED PCBs (then referred to as [_driver_]({{site.baseurl}}/Generation%204/Panel/docs/driver.html)), and the PCBs providing part of the panel board functionally being called [_comm board_]({{site.baseurl}}/Generation%204/Hardware/docs/comm.html).
 
 ## Components
 
@@ -47,14 +47,14 @@ The address of each panel can be any integer from 1…127. The 0 address is rese
 Because each panel has a microprocessor on-board, each panel needs to be programmed individually. The programming interface (or ISP, in system programming) lines only connect to the microprocessor when the panel is in the left-most position of the controller board, or the plug on the case-mount portion of the controller PCB. The procedure described here is for programming G2 panels (the fuse setting are different for G3 panels). In some eventual future, programming will be done directly from the MATLAB interface. As of right now the procedure is as follows:
 
 1. Once the panel is in place, connect the programming device to the 6 pin header, labelled __Panel ISP__.
-2. Open AVR Studio and start the AVR programming tool *STK500/AVRISP*{:.gui-btn} from the tools menu.
+2. Open AVR Studio and start the AVR programming tool _STK500/AVRISP_{:.gui-btn} from the tools menu.
 3. Test the connection by selecting the ATmega8 device from the drop-down menu, and then in the advanced tab try to read signature. If these match, move on, otherwise check the connections, restart, etc.
-4. Program the fuses. This is done from the *Fuses*{:.gui-btn} tab – these options should be set: *Preserve EEPROM memory through chip erase cycle*{:.gui-txt} to *on*{:.gui-txt}, and set clock rate to the last choice: *Ext. Crystal/Resonator High Freq.*{:.gui-txt}: *Start-up time 16K CK + 64 ms*{:.gui-txt}. It is also a good idea to set *Brown-out detection level at VCC*{:.gui-txt} = *4.0V*{:.gui-txt} and *Brown-out detection enabled*{:.gui-txt}.
-5. Program the EEPROM on the Atmega8 by selecting the *Program*{:.gui-btn} tab and electing the input hex file as: *panel.eep*{:.gui-txt}, and then programming the chip.
-6. Program the flash on the Atmega8 by selecting the *Program*{:.gui-btn} tab and selecting the input hex file as: *panel.hex*{:.gui-txt}, and then programming the chip.
+4. Program the fuses. This is done from the _Fuses_{:.gui-btn} tab – these options should be set: _Preserve EEPROM memory through chip erase cycle_{:.gui-txt} to _on_{:.gui-txt}, and set clock rate to the last choice: _Ext. Crystal/Resonator High Freq._{:.gui-txt}: _Start-up time 16K CK + 64 ms_{:.gui-txt}. It is also a good idea to set _Brown-out detection level at VCC_{:.gui-txt} = _4.0V_{:.gui-txt} and _Brown-out detection enabled_{:.gui-txt}.
+5. Program the EEPROM on the Atmega8 by selecting the _Program_{:.gui-btn} tab and electing the input hex file as: _panel.eep_{:.gui-txt}, and then programming the chip.
+6. Program the flash on the Atmega8 by selecting the _Program_{:.gui-btn} tab and selecting the input hex file as: _panel.hex_{:.gui-txt}, and then programming the chip.
 7. If this is all done correctly the LED should display 00 and the display should be bright with no flicker. If it appears dull or flickery - the clock was probably not set correctly. It is always a good idea to verify both the program and the fuses to make sure these are set correctly.
 
-For programming many panels this process can be automated by using the *Auto*{:.gui-btn} tab and selecting *program FLASH*{:.gui-txt}, *program EEPROM*{:.gui-txt}, and *program fuses*{:.gui-txt}. Once a panel is programmed it needs to be addressed, this is done using the PControl software.
+For programming many panels this process can be automated by using the _Auto_{:.gui-btn} tab and selecting _program FLASH_{:.gui-txt}, _program EEPROM_{:.gui-txt}, and _program fuses_{:.gui-txt}. Once a panel is programmed it needs to be addressed, this is done using the PControl software.
 
 # Parts list {#parts-list}
 
